@@ -11,11 +11,12 @@
 |
 */
 
+use Illuminate\Support\Facades\Response;
 use Illuminate\Support\Str;
 
 Route::get('/', function () {
 
-    // dd(Str::partNumber('12345678899'));
+    dd(Str::partNumber('12345678899'));
 
     return Response::errorJson('A huge error occurred! BOOM!');
 
